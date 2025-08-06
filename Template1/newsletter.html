@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - BusinessPro</title>
+    <meta name="description" content="Stay updated with BusinessPro's latest insights and industry news">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <span class="logo">BusinessPro</span>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="newsletter.html" class="nav__link active">Newsletter</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header gradient-bg">
+            <div class="container">
+                <div class="page-header__content animate-fade-up">
+                    <h1 class="page-header__title">Stay Informed</h1>
+                    <p class="page-header__subtitle">Get the latest insights, trends, and updates delivered to your inbox</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-signup section">
+            <div class="container">
+                <div class="newsletter-signup__content">
+                    <div class="newsletter-signup__info animate-on-scroll">
+                        <h2>Join Our Community</h2>
+                        <p>Subscribe to our newsletter and get exclusive access to:</p>
+                        <ul class="newsletter-benefits">
+                            <li>Industry insights and trends</li>
+                            <li>Expert tips and best practices</li>
+                            <li>Product updates and announcements</li>
+                            <li>Exclusive webinars and events</li>
+                            <li>Case studies and success stories</li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-signup__form animate-on-scroll">
+                        <form class="newsletter-form" id="newsletterForm">
+                            <div class="form-group">
+                                <label for="newsletter-name" class="form-label">Full Name</label>
+                                <input type="text" id="newsletter-name" name="name" class="form-input" required>
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="newsletter-email" class="form-label">Email Address</label>
+                                <input type="email" id="newsletter-email" name="email" class="form-input" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="newsletter-interests" class="form-label">Interests (Optional)</label>
+                                <select id="newsletter-interests" name="interests" class="form-select">
+                                    <option value="">Select your primary interest</option>
+                                    <option value="digital-transformation">Digital Transformation</option>
+                                    <option value="business-analytics">Business Analytics</option>
+                                    <option value="cybersecurity">Cybersecurity</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-solutions">Mobile Solutions</option>
+                                    <option value="strategic-consulting">Strategic Consulting</option>
+                                </select>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter-consent" name="consent" required>
+                                <label for="newsletter-consent" class="checkbox-label">
+                                    I agree to receive marketing communications and understand I can unsubscribe at any time.
+                                </label>
+                                <span class="form-error" id="consent-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Articles -->
+        <section class="recent-articles gradient-bg-secondary">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">Recent Articles</h2>
+                    <p class="section__subtitle">Catch up on our latest insights and industry analysis</p>
+                </div>
+                <div class="articles__grid">
+                    <article class="article-card animate-on-scroll">
+                        <div class="article-card__header">
+                            <div class="article-card__image">
+                                <div class="placeholder-icon">📊</div>
+                            </div>
+                            <div class="article-card__meta">
+                                <span class="article-card__category">Analytics</span>
+                                <span class="article-card__date">January 15, 2025</span>
+                            </div>
+                        </div>
+                        <div class="article-card__content">
+                            <h3 class="article-card__title">The Future of Business Analytics: AI-Powered Insights</h3>
+                            <p class="article-card__excerpt">Discover how artificial intelligence is revolutionizing business analytics and what it means for your data strategy.</p>
+                            <a href="#" class="article-card__link">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card animate-on-scroll">
+                        <div class="article-card__header">
+                            <div class="article-card__image">
+                                <div class="placeholder-icon">🔒</div>
+                            </div>
+                            <div class="article-card__meta">
+                                <span class="article-card__category">Security</span>
+                                <span class="article-card__date">January 12, 2025</span>
+                            </div>
+                        </div>
+                        <div class="article-card__content">
+                            <h3 class="article-card__title">Cybersecurity Trends to Watch in 2025</h3>
+                            <p class="article-card__excerpt">Stay ahead of emerging cybersecurity threats with our comprehensive guide to the latest security trends and best practices.</p>
+                            <a href="#" class="article-card__link">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card animate-on-scroll">
+                        <div class="article-card__header">
+                            <div class="article-card__image">
+                                <div class="placeholder-icon">🚀</div>
+                            </div>
+                            <div class="article-card__meta">
+                                <span class="article-card__category">Digital Transformation</span>
+                                <span class="article-card__date">January 10, 2025</span>
+                            </div>
+                        </div>
+                        <div class="article-card__content">
+                            <h3 class="article-card__title">Digital Transformation Success Stories</h3>
+                            <p class="article-card__excerpt">Learn from real-world examples of successful digital transformation initiatives and the strategies that made them work.</p>
+                            <a href="#" class="article-card__link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Stats -->
+        <section class="newsletter-stats section">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">Join Thousands of Subscribers</h2>
+                    <p class="section__subtitle">Be part of our growing community of business professionals</p>
+                </div>
+                <div class="stats__grid">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__number">15,000+</div>
+                        <div class="stat-item__label">Active Subscribers</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__number">95%</div>
+                        <div class="stat-item__label">Open Rate</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__number">Weekly</div>
+                        <div class="stat-item__label">Quality Content</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__number">5★</div>
+                        <div class="stat-item__label">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">What Subscribers Say</h2>
+                    <p class="section__subtitle">Hear from our community about the value of our newsletter</p>
+                </div>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__content">
+                            <p>"The insights shared in BusinessPro's newsletter have been invaluable for our strategic planning. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">👤</div>
+                            <div class="testimonial-card__info">
+                                <h4>Jennifer Liu</h4>
+                                <p>Strategy Director, GrowthCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__content">
+                            <p>"I look forward to every issue. The content is always relevant, actionable, and perfectly timed with industry trends."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">👤</div>
+                            <div class="testimonial-card__info">
+                                <h4>David Park</h4>
+                                <p>CTO, TechFlow Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="logo">BusinessPro</span>
+                    <p>Professional solutions for modern businesses.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="newsletter.html">Newsletter</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 BusinessPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

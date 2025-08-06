@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BusinessPro</title>
+    <meta name="description" content="Get in touch with BusinessPro for expert business solutions">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <span class="logo">BusinessPro</span>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="newsletter.html" class="nav__link">Newsletter</a></li>
+                <li><a href="contact.html" class="nav__link active">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header gradient-bg">
+            <div class="container">
+                <div class="page-header__content animate-fade-up">
+                    <h1 class="page-header__title">Contact Us</h1>
+                    <p class="page-header__subtitle">Ready to transform your business? Let's start the conversation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section">
+            <div class="container">
+                <div class="contact__content">
+                    <!-- Contact Information -->
+                    <div class="contact__info animate-on-scroll">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <div class="contact__icon">📍</div>
+                                <div class="contact__text">
+                                    <h4>Address</h4>
+                                    <p>123 Business Avenue<br>Suite 100<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__icon">📞</div>
+                                <div class="contact__text">
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__icon">✉️</div>
+                                <div class="contact__text">
+                                    <h4>Email</h4>
+                                    <p>hello@businesspro.com</p>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__icon">🕒</div>
+                                <div class="contact__text">
+                                    <h4>Business Hours</h4>
+                                    <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__social">
+                            <h4>Follow Us</h4>
+                            <div class="social__links">
+                                <a href="#" class="social__link">LinkedIn</a>
+                                <a href="#" class="social__link">Twitter</a>
+                                <a href="#" class="social__link">Facebook</a>
+                                <a href="#" class="social__link">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form animate-on-scroll">
+                        <form class="form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                    <span class="form-error" id="firstName-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                    <span class="form-error" id="lastName-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                    <span class="form-error" id="email-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                    <span class="form-error" id="phone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Interest *</label>
+                                <select id="service" name="service" class="form-select" required>
+                                    <option value="">Select a service</option>
+                                    <option value="digital-transformation">Digital Transformation</option>
+                                    <option value="business-analytics">Business Analytics</option>
+                                    <option value="cybersecurity">Cybersecurity Solutions</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-solutions">Mobile Solutions</option>
+                                    <option value="strategic-consulting">Strategic Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error" id="service-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Project Budget</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k-plus">$50,000+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Tell us about your project and requirements..." required></textarea>
+                                <span class="form-error" id="message-error"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent" class="checkbox-label">
+                                    I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                                </label>
+                                <span class="form-error" id="consent-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map gradient-bg-secondary">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">Visit Our Office</h2>
+                    <p class="section__subtitle">We're located in the heart of the business district</p>
+                </div>
+                <div class="map__placeholder animate-on-scroll">
+                    <div class="placeholder-icon">🗺️</div>
+                    <p>Interactive Map Placeholder</p>
+                    <small>123 Business Avenue, Suite 100, New York, NY 10001</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class="quick-contact section">
+            <div class="container">
+                <div class="quick-contact__content animate-on-scroll">
+                    <h2>Need Immediate Assistance?</h2>
+                    <p>For urgent inquiries or immediate support, reach out to us directly:</p>
+                    <div class="quick-contact__actions">
+                        <a href="tel:+15551234567" class="btn btn--primary">
+                            📞 Call Now
+                        </a>
+                        <a href="mailto:hello@businesspro.com" class="btn btn--secondary">
+                            ✉️ Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="logo">BusinessPro</span>
+                    <p>Professional solutions for modern businesses.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="newsletter.html">Newsletter</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 BusinessPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
